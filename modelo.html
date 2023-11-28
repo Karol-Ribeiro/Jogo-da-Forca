@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MODELO-v1</title>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    background-image: url(https://img.freepik.com/vetores-gratis/vetor-de-design-de-papel-branco-em-branco_53876-161340.jpg?size=626&ext=jpg&ga=GA1.1.1880011253.1699315200&semt=ais);
+    background-size: cover;
+
+}
+
+.principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/*ESTILO DO BONECO E DA DICA*/
+.juncao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/*ESTILO DO BONECO*/
+.boneco {
+    width: 150px;
+    height: 150px;
+    background-color: #ccc;
+}
+
+/*ESTILO DA DICA*/
+.dica {
+    flex: 1;
+    padding: 10px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+}
+
+/*ESTILO DA PALAVRA*/
+.linha {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.letra {
+    font-size: 24px;
+    margin: 0 10px;
+    letter-spacing: 15px;
+}
+
+/*ESTILO DAS PALAVRAS DO TECLADO*/
+.teclado {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.teclado1,
+.teclado2,
+.teclado3 {
+    display: flex;
+    justify-content: center;
+    margin: 5px 0;
+}
+
+.q,.w,.e,.r,.t,.y,.u,.i,.o,.p,.a,.s,.d,
+.f,.g,.h,.j,.k,.l,.z,.x,.c,.v,.b,.n,.m {
+    width: 50px;
+    height: 50px;
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+    cursor: pointer;
+}
+    </style>
+
+</head>
+<body>
+    <div class="principal">
+        <div class="juncao">
+            <div class="boneco"></div>
+            <div class="dica"></div>
+        </div>
+
+        <div class="linha">
+            <p class="letra">_____________</p>
+        </div>
+
+        <div class="teclado">
+            <div class="teclado1">
+                <p class="q">Q</p>
+                <p class="w">W</p>
+                <p class="e">E</p>
+                <p class="r">R</p>
+                <p class="t">T</p>
+                <p class="y">Y</p>
+                <p class="u">U</p>
+                <p class="i">I</p>
+                <p class="o">O</p>
+                <p class="p">P</p>
+            </div>
+    
+            <div class="teclado2">
+                <p class="a">A</p>
+                <p class="s">S</p>
+                <p class="d">D</p>
+                <p class="f">F</p>
+                <p class="g">G</p>
+                <p class="h">H</p>
+                <p class="j">J</p>
+                <p class="k">K</p>
+                <p class="l">L</p>
+            </div>
+    
+            <div class="teclado3">
+                <p class="z">Z</p>
+                <p class="x">X</p>
+                <p class="c">C</p>
+                <p class="v">V</p>
+                <p class="b">B</p>
+                <p class="n">N</p>
+                <p class="m">M</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
